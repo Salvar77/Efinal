@@ -1,0 +1,67 @@
+@import "../../styles/colors";
+.featured {
+  background-color: #222;
+  color: $white-smooth;
+  padding: 50px 0;
+  @media (min-width: 768px) {
+    padding-top: 11rem;
+  }
+}
+
+.title {
+  margin: 0;
+  font-weight: normal;
+  font-size: 1.9rem;
+  @media screen and (min-width: 768px) {
+    font-size: 3.6rem;
+  }
+}
+
+.desc {
+  color: #aaa;
+  font-size: 1.3rem;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  img {
+    max-width: 100%;
+    max-height: 200px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  div:nth-child(1) {
+    order: 2;
+  }
+
+  @media screen and (min-width: 768px) {
+    grid-template-columns: 1.1fr 0.9fr;
+    img {
+      max-width: 100%;
+    }
+    div:nth-child(1) {
+      order: 0;
+    }
+  }
+}
+
+.column {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.buttonsWrapper {
+  display: flex;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+.svg {
+  width: 2.2rem;
+  height: 2.2rem;
+  fill: $white-smooth;
+}

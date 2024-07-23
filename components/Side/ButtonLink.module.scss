@@ -1,0 +1,14 @@
+@import "../../styles/colors";
+
+.buttonStyle {
+  display: inline-flex;
+  align-items: center;
+  background-color: $blue;
+  border: 0;
+  color: $white-smooth;
+  padding: 5px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-sizing: border-box;
+  text-decoration: none;
+}

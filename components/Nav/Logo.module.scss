@@ -1,0 +1,10 @@
+.logo {
+  display: flex;
+  margin-top: -5.7rem;
+  justify-content: center;
+  padding: 1rem;
+
+  @media screen and (min-width: 992px) {
+    display: none;
+  }
+}

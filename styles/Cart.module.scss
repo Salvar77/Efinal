@@ -1,0 +1,76 @@
+@import "../styles/colors";
+
+.columnsWrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  @media screen and (min-width: 768px) {
+    grid-template-columns: 1.3fr 0.7fr;
+  }
+
+  gap: 40px;
+}
+
+.box {
+  background-color: $white-smooth;
+  padding: 3rem;
+}
+
+.productInfoCell {
+  padding: 10px 0;
+}
+
+.productImageBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 100px;
+  padding: 2px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
+  img {
+    max-width: 60px;
+    max-height: 60px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+    img {
+      max-width: 80px;
+      max-height: 80px;
+    }
+  }
+}
+
+.quantityLabel {
+  display: block;
+  padding: 0 13px;
+
+  @media screen and (min-width: 768px) {
+    display: inline-block;
+    padding: 0 13px;
+  }
+}
+
+.styled {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: $blue-2;
+  border: 0;
+  color: $white-smooth;
+  padding: 5px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  width: 100%;
+}
+
+.postal {
+  display: flex;
+  gap: 5px;
+}

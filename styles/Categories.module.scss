@@ -1,0 +1,54 @@
+.category {
+  display: flex;
+  gap: 0.5rem;
+
+  &__btn {
+    padding: 0.5rem;
+  }
+
+  &__button {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+  }
+
+  &__properties {
+    margin-bottom: 1rem;
+
+    &Label {
+      display: block;
+      margin-top: 1rem;
+    }
+
+    &Box {
+      display: flex;
+      gap: 0.5rem;
+      margin-bottom: 0.7rem;
+
+      &Style {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__input {
+    margin-bottom: 0;
+  }
+}
+
+.form {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.table {
+  margin-top: 1.6rem;
+}
+
+.select {
+  margin-bottom: 0;
+}
+
+.edit {
+  margin-right: 0.5rem;
+}

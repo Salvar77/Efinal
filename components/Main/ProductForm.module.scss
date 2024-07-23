@@ -1,0 +1,54 @@
+@import "../../styles/colors";
+
+.photo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-bottom: 1rem;
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 12rem;
+    height: 12rem;
+    border-radius: 0.4rem;
+    color: $dark-smooth;
+    background-color: $white-smooth;
+    border: 0.1rem solid $grey-smooth-3;
+    // box-shadow: 0.1rem 0.1rem;
+    cursor: pointer;
+  }
+
+  &__file {
+    display: none;
+  }
+
+  &__link {
+    height: 12rem;
+  }
+
+  &__img {
+    border-radius: 0.4rem;
+  }
+}
+
+.upload {
+  display: flex;
+  align-items: center;
+  height: 12rem;
+  padding: 0.5rem;
+}
+
+.sortable {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.svg {
+  height: 3rem;
+  width: 3rem;
+}

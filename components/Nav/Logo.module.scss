@@ -1,0 +1,24 @@
+@import "../../styles/colors";
+
+.logo {
+  &__svg {
+    display: flex;
+    width: 2.9rem;
+    height: 2.9rem;
+    color: $elegant-dark-blue;
+  }
+
+  &__main {
+    &One {
+      display: flex;
+
+      text-decoration: none;
+      gap: 0.5rem;
+    }
+  }
+
+  &__span {
+    font-size: 2.6rem;
+    color: $elegant-dark-blue;
+  }
+}

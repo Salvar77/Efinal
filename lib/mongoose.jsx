@@ -5,6 +5,7 @@ const mongooseConnect = () => {
     return mongoose.connection.asPromise();
   } else {
     const uri = process.env.MONGODB_URI;
+    console.log("MONGODB_URI:", uri);
     return mongoose.connect(uri);
   }
 };

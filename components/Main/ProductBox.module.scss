@@ -27,7 +27,7 @@
 .svg {
   width: 2.2rem;
   height: 2.2rem;
-  fill: $white-smooth;
+  fill: $elegant-dark-blue;
   @media screen and (max-width: 768px) {
     display: none;
   }
@@ -56,11 +56,12 @@
   }
 }
 .price {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   font-weight: 400;
   text-align: right;
+  margin-bottom: 0.4rem;
   @media screen and (min-width: 768px) {
-    font-size: 1.3rem;
+    font-size: 1.8rem;
     font-weight: 600;
     text-align: left;
   }

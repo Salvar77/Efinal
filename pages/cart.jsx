@@ -76,9 +76,8 @@ const CartPage = () => {
       <div>
         <Center>
           <div className={classes.columnsWrapper}>
-            {" "}
             <div className={classes.box}>
-              <h1>Płatnośc przebiegła pomyślnie!</h1>
+              <h1>Płatność przebiegła pomyślnie!</h1>
               <p>Wyślemy emaila z potwierdzeniem zakupu.</p>
             </div>
           </div>
@@ -91,10 +90,9 @@ const CartPage = () => {
     <Center>
       <div className={classes.columnsWrapper}>
         <div className={classes.box}>
-          {" "}
-          {!cartProducts?.length && <div>Twój koszyk jest pusty</div>}
+          {!cartProducts.length && <div>Twój koszyk jest pusty</div>}
           <h2>Koszyk</h2>
-          {products?.length > 0 && (
+          {products.length > 0 && (
             <Table>
               <thead>
                 <tr>
@@ -103,13 +101,11 @@ const CartPage = () => {
                   <th>Cena</th>
                 </tr>
               </thead>
-
               <tbody>
                 {products.map((product) => (
-                  <tr>
+                  <tr key={product._id}>
                     <td className={classes.productInfoCell}>
                       <div className={classes.productImageBox}>
-                        {" "}
                         <img src={product.images[0]} alt="" />
                       </div>
                       {product.title}
@@ -126,7 +122,6 @@ const CartPage = () => {
                       </Button>
                     </td>
                     <td>
-                      {" "}
                       {cartProducts.filter((id) => id === product._id).length *
                         product.price}{" "}
                       zł
@@ -142,10 +137,9 @@ const CartPage = () => {
             </Table>
           )}
         </div>
-        {!!cartProducts?.length && (
+        {!!cartProducts.length && (
           <div className={classes.box}>
             <h2>Informacje o zamówieniu</h2>
-
             <Input
               type="text"
               placeholder="Imię"
@@ -161,7 +155,6 @@ const CartPage = () => {
               onChange={(ev) => setEmail(ev.target.value)}
             />
             <div className={classes.postal}>
-              {" "}
               <Input
                 type="text"
                 placeholder="Miasto"
@@ -175,7 +168,7 @@ const CartPage = () => {
                 value={postalCode}
                 name="postalCode"
                 onChange={(ev) => setPostalCode(ev.target.value)}
-              />{" "}
+              />
             </div>
             <Input
               type="text"

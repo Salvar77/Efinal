@@ -6,7 +6,7 @@
   @media screen and (min-width: 768px) {
     grid-template-columns: 1.3fr 0.7fr;
   }
-
+  padding-top: 2rem;
   gap: 40px;
 }
 
@@ -60,7 +60,7 @@
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  background-color: $blue-2;
+  background-color: $elegant-dark-blue;
   border: 0;
   color: $white-smooth;
   padding: 5px 15px;

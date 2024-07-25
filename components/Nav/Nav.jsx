@@ -40,7 +40,7 @@ const Nav = ({ isOpen, toggleNav }) => {
       <nav className={navClasses}>
         <div className={classes.nav__container}>
           <Link href={"/"} className={classes.nav__logo}>
-            Elogistik
+            Efinal
           </Link>
           <ul aria-hidden className={classes.nav__items}>
             <li onClick={handleToggleNav}>
@@ -56,7 +56,7 @@ const Nav = ({ isOpen, toggleNav }) => {
               <Link href={"/account"}>Konto</Link>
             </li>
             <li onClick={handleToggleNav}>
-              <Link href={"/cart"}>Cart({cartProducts.length})</Link>
+              <Link href={"/cart"}>Koszyk({cartProducts.length})</Link>
             </li>
           </ul>
         </div>

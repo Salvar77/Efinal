@@ -1,6 +1,6 @@
 import Center from "../Side/Center";
 import classes from "./Featured.module.scss";
-import foto from "../../assets/image/books2.jpg";
+import foto from "../../assets/image/books1.jpg";
 import Image from "next/image";
 import Button from "../Side/Button";
 import ButtonLink from "../Side/ButtonLink";
@@ -24,7 +24,10 @@ const Featured = ({ product }) => {
               <p className={classes.desc}>{product.description}</p>
               <div className={classes.buttonsWrapper}>
                 {" "}
-                <ButtonLink href={"/product/" + product._id}>
+                <ButtonLink
+                  href={"/product/" + product._id}
+                  className={classes.button}
+                >
                   Czytaj więcej
                 </ButtonLink>
                 <Button onClick={addFeaturedToCart}>
@@ -47,7 +50,7 @@ const Featured = ({ product }) => {
               </div>
             </div>
           </div>
-          <div className={classes.column}>
+          <div className={classes.columno}>
             <Image src={foto} alt=""></Image>
           </div>
         </div>

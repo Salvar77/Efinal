@@ -15,11 +15,12 @@ export default function App({ Component, pageProps }) {
     <>
       {" "}
       <CartContextProvider>
+        <header>
+          <Nav isOpen={isOpen} toggleNav={toggleNav}></Nav>
+          <BurgerMenu isOpen={isOpen} handleOpen={toggleNav}></BurgerMenu>
+        </header>
         <div className="container">
-          <header>
-            <Nav isOpen={isOpen} toggleNav={toggleNav}></Nav>
-            <BurgerMenu isOpen={isOpen} handleOpen={toggleNav}></BurgerMenu>
-          </header>
+          {" "}
           <Component {...pageProps} />
         </div>
       </CartContextProvider>

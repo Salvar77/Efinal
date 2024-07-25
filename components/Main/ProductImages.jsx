@@ -7,18 +7,23 @@ const ProductImages = ({ images }) => {
     <div>
       <div className={classes.bigImageWrapper}>
         {" "}
-        <img className={classes.bigImage} src={activeImage} />
+        <img
+          className={classes.bigImage}
+          src={activeImage}
+          alt="Active Product"
+        />
       </div>
 
       <div className={classes.imageButtons}>
         {images.map((image) => (
           <div
-            className={classes.imageButton}
+            className={`${classes.imageButton} ${
+              image === activeImage ? classes.active : ""
+            }`}
             onClick={() => setActiveImage(image)}
-            active={image === activeImage}
             key={image}
           >
-            <img src={image} />
+            <img src={image} alt="Product Thumbnail" />
           </div>
         ))}
       </div>

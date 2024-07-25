@@ -3,11 +3,16 @@
 .styledButton {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
-  background-color: $blue-2;
-  border: 0;
-  color: $white-smooth;
+  background-color: $dark-smooth rgba(0, 0, 0, 0.9);
+  border: 1px solid black;
+  font-size: 1.6rem;
+  color: $dark-smooth;
   padding: 5px 15px;
   border-radius: 5px;
   cursor: pointer;
+  fill: $elegant-dark-blue;
+
+  @media screen and (min-width: 992px) {
+    max-width: 135px;
+  }
 }

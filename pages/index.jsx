@@ -8,7 +8,7 @@ export default function Home() {
     <Layout>
       <div className={classes.index}>
         <h2>
-          Hey, Hi, Hello <b>{session?.user?.email}</b>
+          Witaj, <b>{session?.user?.email}</b>
         </h2>
 
         <div className={classes.indexBox}>

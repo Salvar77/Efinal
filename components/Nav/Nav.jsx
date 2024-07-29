@@ -40,7 +40,7 @@ const Nav = ({ isOpen, toggleNav }) => {
       <nav className={navClasses}>
         <div className={classes.nav__container}>
           <Link href={"/"} className={classes.nav__logo}>
-            Efinal
+            Ecommerce
           </Link>
           <ul aria-hidden className={classes.nav__items}>
             <li onClick={handleToggleNav}>
